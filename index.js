@@ -28,6 +28,7 @@ module.exports = {
                         for (i = 0; i < args.length; i = i + 1) {
                             if (args.hasOwnProperty(args[i])) {
                                 options.push(args[i]);
+                                options.push('headless');
                             }
                         }
 
