@@ -25,10 +25,10 @@ module.exports = {
                         var child, result, options, i;
 
                         options = [cliPath];
+                        options.push('headless');
                         for (i = 0; i < args.length; i = i + 1) {
                             if (args.hasOwnProperty(args[i])) {
                                 options.push(args[i]);
-                                options.push('headless');
                             }
                         }
 
@@ -67,6 +67,7 @@ module.exports = {
                 },
 
                 run: function (options, rawArgs) {
+                    console.log(rawArgs);
                     if (!isWin) {
                         return console.error('This addon configures Windows, but the OS is not Windows.');
                     }

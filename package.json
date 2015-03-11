@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-windows-addon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Optimize performance on Windows",
   "directories": {
     "doc": "doc",
@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "chalk": "^1.0.0",
-    "ember-cli-windows": "^1.0.3",
+    "ember-cli-windows": "^1.0.4",
     "rsvp": "^3.0.17",
     "touch": "0.0.3"
   }
