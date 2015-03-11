@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-windows-addon",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Optimize performance on Windows",
   "directories": {
     "doc": "doc",
@@ -15,7 +15,11 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "Felix Rieseberg",
+    "email": "felix@felixrieseberg.com",
+    "url": "http://www.felixrieseberg.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
@@ -41,7 +45,9 @@
     "load-grunt-tasks": "^1.0.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "Windows",
+    "Microsoft"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
