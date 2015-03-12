@@ -39,7 +39,6 @@
     "express": "^4.8.5",
     "glob": "^4.0.5",
     "grunt": "^0.4.5",
-    "grunt-jscodesniffer": "^0.1.8",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jscs": "^0.8.1",
     "load-grunt-tasks": "^1.0.0"
@@ -54,7 +53,7 @@
   },
   "dependencies": {
     "chalk": "^1.0.0",
-    "ember-cli-windows": "^1.0.5",
+    "ember-cli-windows": "^1.1.0",
     "rsvp": "^3.0.17",
     "touch": "0.0.3"
   }
