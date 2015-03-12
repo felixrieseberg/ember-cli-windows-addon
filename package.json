@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-windows-addon",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Optimize performance on Windows",
   "directories": {
     "doc": "doc",
