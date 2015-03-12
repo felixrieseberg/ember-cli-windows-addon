@@ -41,14 +41,22 @@ module.exports = {
 
                         child.stdout.on('data', function (data) {
                             var string = data.toString();
-                            console.log(string);
+                            if (this.ui) {
+                                this.ui.writeLine(string);
+                            } else {
+                                console.log(string);
+                            }
 
                             result.output.push(string);
                         });
 
                         child.stderr.on('data', function (data) {
                             var string = data.toString();
-                            console.error(string);
+                            if (this.ui) {
+                                this.ui.writeLine(string);
+                            } else {
+                                console.error(string);
+                            }
 
                             result.errors.push(string);
                         });
@@ -67,9 +75,8 @@ module.exports = {
                 },
 
                 run: function (options, rawArgs) {
-                    console.log(rawArgs);
                     if (!isWin) {
-                        return console.error('This addon configures Windows, but the OS is not Windows.');
+                        return;
                     }
 
                     return this.runCommand(rawArgs);
@@ -84,7 +91,11 @@ module.exports = {
                 var stats = fs.lstatSync(path.join(__dirname, '.configured')); // jshint ignore:line
             } catch (error) {
                 // .configured doesn't exist, meaning that we're not configured yet
-                return console.log(chalk.green.bold('Please run \'ember windows\` to configure Windows for better build performance.'));
+                if (this.ui) {
+                    this.ui.writeLine(chalk.green.bold('Please run \'ember windows\` to configure Windows for better build performance.'));
+                } else {
+                    console.log(chalk.green.bold('Please run \'ember windows\` to configure Windows for better build performance.'));
+                }
             }
         }
         return;
