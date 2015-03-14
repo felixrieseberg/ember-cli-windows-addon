@@ -11,7 +11,8 @@ To use, run:
 ember windows
 ```
 
-If you want to configure Windows Defender or Windows Search only, add `defender` or `search` as a parameter.
+## Requirements
+Windows 10, 8.1, or 8 are heavily recommended. Windows 7 is supported, but we urge you to upgrade.
 
 ## License
 MIT License, Copyright 2015 Felix Rieseberg & Microsoft. See LICENSE for more information.
