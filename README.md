@@ -11,6 +11,13 @@ To use, run:
 ember windows
 ```
 
+Note. If you get a PSSecurityException, you may need to run:
+```
+powershell.exe
+Set-ExecutionPolicy Unrestricted -scope Process
+ember windows
+```
+
 ## Requirements
 Windows 10, 8.1, or 8 are heavily recommended. Windows 7 is supported, but we urge you to upgrade.
 
