@@ -1,4 +1,6 @@
 ## Ember Addon: Configure Windows for Ember Cli Performance
+Dramatically improve build speed during `ember build` and `ember serve`!
+
 Ember and Ember Cli are some of the best tools for the development of sophisticated web applications. A lot of its magic is in the automatic build tool, which also allows for incremental builds during development. Those builds can be a bit slow on Windows - correct configuration of Windows Defender and the Windows Search Index improve the speed dramatically. Made with :heart: by Microsoft. This addon includes [ember-cli-windows](https://github.com/felixrieseberg/ember-cli-windows) in your Ember Cli project and instructs Windows users to configure their system for optimized speed.
 
 To install, run:
@@ -11,9 +13,8 @@ To use, run:
 ember windows
 ```
 
-Note. If you get a PSSecurityException, you may need to run:
+If you get a PSSecurityException, you may need to run the following command using PowerShell:
 ```
-powershell.exe
 Set-ExecutionPolicy Unrestricted -scope Process
 ember windows
 ```
