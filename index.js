@@ -17,7 +17,7 @@ module.exports = {
             windows: {
                 name: 'windows',
                 aliases: ['win'],
-                description: 'Configure Windows Search and Defender to improve performanc for this project',
+                description: 'Configure Windows Search and Defender to improve performance for this project',
                 works: 'insideProject',
 
                 runCommand: function (args) {
