@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "chalk": "^1.0.0",
-    "ember-cli-windows": "^1.3.0",
+    "ember-cli-windows": "latest",
     "rsvp": "^3.0.17",
     "touch": "0.0.3"
   }
