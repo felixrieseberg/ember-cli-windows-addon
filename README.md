@@ -20,7 +20,7 @@ ember windows
 ```
 
 ## Run Ember Cli as Administrator
-Additional performance can be gained by using an elevated prompt, which can be achieved by starting PowerShell or CMD ‘as Administrator’. If you do not have administrative rights on your machine, see the [Ember Cli section on symlinks](http://www.ember-cli.com/#symlinks-on-windows) for information on how to enable additional performance gains.
+Additional performance can be gained by using an elevated prompt, which can be achieved by starting PowerShell or CMD ‘as Administrator’. If you do not have administrative rights on your machine, see the [Ember Cli section on symlinks](http://www.ember-cli.com/user-guide/#symlinks-on-windows) for information on how to enable additional performance gains.
 
 ## Requirements
 Windows 10, 8.1, or 8 are heavily recommended. Windows 7 is supported, but we urge you to upgrade.
