@@ -8,7 +8,7 @@ var path = require('path'),
     fs = require('fs'),
     chalk = require('chalk'),
     isWin = /^win/.test(process.platform),
-    cliPath = path.resolve(__dirname, 'node_modules', 'ember-cli-windows', 'bin', 'ember-cli-windows');
+    cliPath = path.join(path.dirname(require.resolve('ember-cli-windows/package.json')), 'bin', 'ember-cli-windows');
 
 module.exports = {
     name: 'ember-cli-windows-addon',
