@@ -9,7 +9,8 @@
   "scripts": {
     "start": "ember server",
     "build": "ember build",
-    "test": "ember test"
+    "test": "ember test",
+    "postinstall": "( ver 2>NUL | find \"Windows\"> NUL ) && ( where ember >NUL 2>&1 && ember windows || echo Please execute `ember windows` after installing the Ember CLI ) || echo ember-cli-windows-addon is unnecessary as you are not running on Windows"
   },
   "repository": {
     "type": "git",
